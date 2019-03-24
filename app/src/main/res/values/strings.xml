@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">PiHR</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtLogin">Login</string>
+    <string name="invalid_username_password">Invalid username or password</string>
+    <string name="server_error">There Is An Error,Please Try Again Later</string>
+    <string name="ok">OK</string>
+
+
+    <!--************Login Activity***********-->
+    <string name="provide_username">Please provide username</string>
+    <string name="provide_password">Please provide password</string>
+    <string name="check_internet_connection">Please check your internet connection</string>
+    <string name="login_processing">Login Processing...</string>
+    <string name="home_menu">Home</string>
+
+    <!--Attendence-->
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera and location permission.  The application will now exit.</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="attendence_successfull">Attendance Successful</string>
+    <string name="failed_to_take_attendance">Failed to take attendance</string>
+    <string name="sorry_cant_fetch_location">Sorry Can\'t fetch location. you can\'t give your attendance right now. Please try again later.</string>
+    <string name="sorry_cant_fetch_location_enable_gps">Sorry Can\'t fetch location. Please enable your GPS.</string>
+    <string name="qr_code">Qr Code</string>
+    <string name="self_attendance">Self Attendance</string>
+    <string name="fetching_location">Fetching Location</string>
+    <string name="requesting_for_attenance">Requesting for attendance ...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Visit Application -->
+    <string name="apply_date">Apply Date</string>
+    <string name="requisiion_from_date">From Date </string>
+    <string name="requisiion_to_date">To Date</string>
+    <string name="notes">Notes</string>
+    <string name="requisiion_status">Status</string>
+    <string name="requisiion_view_btn">View</string>
+    <string name="requisiion_edit_btn">Edit</string>
+    <string name="loading_visit_application_list">Loading Visit application list ...</string>
+    <string name="view_application_title">View Application Details</string>
+    <string name="edit_application_title">Edit Application Details</string>
+    <string name="failed_to_load_data">Failed to Load Data</string>
+    <string name="failed_to_save_data">Failed to Save Data</string>
+    <string name="no_information_available">No Information Available.</string>
+    <string name="visit_application_information">Visit Application Information</string>
+    <string name="requisiion_from_date_mandatory">From Date *</string>
+    <string name="requisiion_to_date_mandatory">To Date *</string>
+    <string name="req_purpose_mandatory">Purpose *</string>
+    <string name="apply_for_visit">Apply For Visit</string>
+    <string name="applying_for_visit">Applying For Visit</string>
+    <string name="application_for_visit">Application For Visit</string>
+
+    <!--********* Leave Application ***********-->
+
+    <string name="leave_type">Leave Type</string>
+    <string name="daycount">Day Count</string>
+    <string name="checking_eligibility_for_leave">Checking Eligibility For Application</string>
+    <string name="cancel">Cancel</string>
+    <string name="text_leaveapplication_datepicker_dialog">leave_application</string>
+    <string name="leave_application_information">Leave Application Information</string>
+    <string name="from_date_mandatory">From Date *</string>
+    <string name="to_date_mandatory">To Date *</string>
+    <string name="purpose_mandatory">Purpose *</string>
+    <string name="hint_purpose">Type Purpose</string>
+    <string name="apply_for_leave">Apply For Leave</string>
+    <string name="loading_data">Loading Data...</string>
+    <string name="please_select_leave_type">Please select Leave Type.</string>
+    <string name="please_insert_from_date">Please insert from date.</string>
+    <string name="please_insert_to_date">Please insert to date.</string>
+    <string name="provide_leave_purpose">Please provide valid leave reason.</string>
+    <string name="application_for_leave">Application For Leave</string>
+    <string name="failed_to_connect_with_server">Failed to connect with server. Please try again later.</string>
+    <string name="loading_leave_application_list">Loading Leave application list</string>
+    <string name="leave_application">Leave Application</string>
+    <string name="application_type">Application Type</string>
+    <string name="leave_end">Leave End</string>
+    <string name="remarks">Remarks</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="visit">Visit</string>
+
+    <!-- Approver Information-->
+    <string name="sending_approve_request">Sending Approve Request...</string>
+    <string name="sending_reject_request">Sending reject request</string>
+    <string name="no_prio_approver_information">No Prior Approrver Information found.</string>
+    <string name="getting_approver_information">Getting approver information ...</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="claim">Claim</string>
+    <string name="pay_slip">Pay Slip</string>
+    <string name="leave_balance">Leave balance</string>
+    <string name="my_attendance">My Attendance</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_employee_id_name">Employee Id/Name</string>
+    <string name="hint_employee_id_name"><font size="14">Please Enter Employee Id/Name</font></string>
+    <string name="could_not_load_data_try_again_later">Could not load data.Please try again Later.</string>
+    <string name="leave_balance_information_not_available">Leave Balance Information is not available</string>
+    <string name="my_leave_balance">My Leave Balance</string>
+    <string name="search">Search</string>
+    <string name="input_cant_be_empty">Input Can\'t be empty</string>
+    <string name="loading_my_attendance">Loading My Attendance</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="national_id">National ID</string>
+    <string name="nationality">Nationality</string>
+    <string name="email">Email</string>
+    <string name="official_information">Official Information</string>
+    <string name="employee_code">Employee Code</string>
+    <string name="join_date">Join Date</string>
+    <string name="designation">Designation</string>
+    <string name="functional_designation">Functional Designation</string>
+    <string name="job_status">Job Status</string>
+    <string name="job_base">Job Base</string>
+    <string name="job_level">Job Level</string>
+    <string name="emplyment_category">Employment Category</string>
+    <string name="department">Department</string>
+    <string name="could_not_find_profile_image">Could not load Profile Image.Please Try again later.</string>
+    <string name="not_defiened">Not Defined</string>
+    <string name="my_profile">My Profile</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="loading_employee_information">Loading Employee Information...</string>
+    <string name="employee_information_not_found">Employee Information Not Found</string>
+    <string name="employee_directory">Employee Directory</string>
+    <string name="leave_calendar">Leave Calendar</string>
+    <string name="hint_company_sub_domain">Company Sub Domain</string>
+    <string name="provide_sub_domain">Please provide a Sub Domain name</string>
+    <string name="leave_purpose">Leave Purpose</string>
+    <string name="my_qr_code">My QR Code</string>
+    <string name="save">Save</string>
+    <string name="employee_id_not_found">Employee Id Not Found! Please try again later.</string>
+    <string name="update">Update</string>
+    <string name="user_doesnt_have_emp_id">User doesn\'t have any Employee Id</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCo2NEG_2JnC9C41qru7OQHH-F6MULPokI
+    </string>
+
+    <string name="sorry_cant_fetch_selection">Please select In Time or Out Time.</string>
+    <string name="status_claimed">Claimed</string>
+    <string name="status_created">Saved</string>
+    <string name="user_admin">admin</string>
+    <string name="status_approved_by_supervisor">Approved by supervisor</string>
+    <string name="status_approved">Approved</string>
+    <string name="status_disbursed">Disbursed</string>
+    <string name="status_rejected">Rejected</string>
+    <string name="status_deleted">Deleted</string>
+    <string name="claim_entry">Claim Entry</string>
+    <string name="claim_item">Claim Item</string>
+    <string name="others">others</string>
+    <string name="approve_success">Successfully Approved</string>
+    <string name="approve_failed">Approving failed</string>
+    <string name="reject_successfull">Successfully rejected</string>
+    <string name="rejection_failed">Rejection failed</string>
+    <string name="claim_posted_successfully">Claim posted successfully</string>
+    <string name="claim_posted_failed">Claimed Posted Failed</string>
+    <string name="please_enter_employee_name">Please Enter Employee Name/Code</string>
+    <string name="please_select_category">Please select category</string>
+    <string name="please_enter_claim_date">Please Enter Claim Date</string>
+    <string name="please_enter_advance_date">Please Enter Advance Date</string>
+    <string name="please_enter_advance_amount">Please Enter Advance Amount</string>
+    <string name="please_enter_claim_amount">Please Enter Claim Amount</string>
+    <string name="please_emter_sanctioned_amount">Please Enter Sanctioned Amount</string>
+    <string name="please_enter_description">Please Enter Description</string>
+    <string name="please_select_status">Please select status</string>
+    <string name="leave_menu">Leave</string>
+    <string name="attendance_menu">Attendance</string>
+    <string name="please_update_to_the_latest_version">Please Update to the latest version.</string>
+    <string name="approve_application">Approve Application</string>
+    <string name="visit_application">Visit Application</string>
+    <string name="view_attendance">View Attendance</string>
+    <string name="employee_leave_balance">Employee Leave Bal.</string>
+    <string name="loading_employee_image">Loading Employee Image...</string>
+    <string name="fetching_location_using_gps">Fetching location using GPS...</string>
+    <string name="loading_qr_image">Loading Qr Code</string>
+    <string name="salary_is_not_added_yet">Salary Is not added yet.</string>
+    <string name="daily_attendance_chart">Daily Attendance Chart</string>
+    <string name="checking_policy">Checking Policy ...</string>
+    <string name="saving_leave_application">Saving Leave Application</string>
+    <string name="cant_fetch_information">Can\'t fetch information from the server! Please try again later.</string>
+    <string name="server_down">Server is currently down! Please try again later.</string>
+    <string name="no_company_found">No Company found under this Sub Domain</string>
+    <string name="checking_domain_name">Checking Domain name</string>
+    <string name="failed_to_authenticate">Failed to authenticate! Please login again.</string>
+    <string name="checking_for_update">Checking For Update...</string>
+    <string name="authenticating">Authenticating...</string>
+    <string name="getting_approver_info">Getting approver information ...</string>
+    <string name="in_time">In Time</string>
+    <string name="out_time">Out Time</string>
+    <string name="loading_leave_calendar">Loading Leave Calendar</string>
+    <string name="cannot_load_qr_code">Can\'t Load QR code! Please try again later.</string>
+
+
+    <string name="confirmation">Confirmation</string>
+    <string name="cancel_this_requisition">Do you want to cancel this claim?</string>
+
+    <string name="take_picture">Take a picture</string>
+    <string name="from_gallery">Choose From Gallery</string>
+
+</resources>

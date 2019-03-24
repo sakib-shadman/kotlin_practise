@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add"
+        android:visible="false"
+        android:title="Add"
+        android:icon="@drawable/user_info"
+        app:showAsAction="always"
+        >
+    </item>
+    <item
+        android:visible="false"
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:icon="@drawable/login"
+        app:showAsAction="always">
+    </item>
+
+</menu>

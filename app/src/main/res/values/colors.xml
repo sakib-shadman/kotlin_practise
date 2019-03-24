@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#37a8e4</color>
+    <color name="colorPrimaryDark">#1682bc</color>
+    <color name="colorAccent">#56bef5</color>
+
+    <color name="textColorWhite">#ffffff</color>
+    <color name="textHintColor">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="rounded_bg_color">#37a8e4</color>
+    <color name="edittext_hint_color">#68c5f7</color>
+    <color name="textColorBlack">#000000</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/textColorWhite</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/textColorWhite</item>
+        <item>@color/colorPrimaryDark</item>
+    </integer-array>
+
+    <color name="abc">#3ea9e2</color>
+    <color name="colorShadow">#cacbce</color>
+    <color name="horizontal_line_color">#bcbcbc</color>
+    <color name="clock_color">#6ebe85</color>
+
+
+    <color name="requisition_reject">#ff3939</color>
+    <color name="textColorGray">#808080</color>
+    <color name="requisition_text">#838383</color>
+
+    <color name="view_color">#1bbc9b</color>
+    <color name="view_pressed_color">#09c7a0</color>
+    <color name="textColorDarkerGray">#424141</color>
+    <color name="view_underline_light_gray">#C2C2C2</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="boxColor">#bfbfbf</color>
+    <color name="approver_white_background">#fafafa</color>
+    <color name="tooltip_background">#e6e4e4</color>
+    <color name="black">#000000</color>
+    <color name="reject">#ff8383</color>
+    <color name="reject_pressed">#ec7979</color>
+
+    <!-- My attendance color -->
+    <color name="attendance_title_color">#267DAB</color>
+    <color name="horizontal_bar_color">#FBFBFB</color>
+    <color name="horizontal_bar_light">#4a94bb</color>
+
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#c7c7c7</color>
+
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+
+    <color name="calendar_background">#2c7ea9</color>
+    <color name="calendar_header_light_grey">#b7b7b7</color>
+    <color name="calendar_header_dark_grey">#a6a6a6</color>
+
+    <color name="light_green">#a4f494</color>
+    <color name="light_red">#fd8e8e</color>
+
+    <color name="present_green">#64c94f</color>
+    <color name="absent_red">#ea2e41</color>
+    <color name="delay_yellow">#e2bc32</color>
+    <color name="extended_delay_dark_yellow">#a9870d</color>
+    <color name="visit_aqua">#31e6c7</color>
+    <color name="leave_blue">#448fea</color>
+    <color name="error_message_color">#DC143C</color>
+
+
+    <color name="allowed_leave">#95CEFF</color>
+    <!--<color name="available_leave">#e7d33b</color>-->
+    <color name="available_leave">#37A8E4</color>
+    <!-- <color name="spent_leave">#999EFF</color>-->
+    <color name="spent_leave">#0054A6</color>
+    <color name="test">#cc650a</color>
+    <color name="test2">#3d9c28</color>
+    <color name="green">#2ECC71</color>
+    <color name="background_color_first">#E97171</color>
+    <color name="background_color_second">#21C883</color>
+    <color name="background_color_third">#37A8E4</color>
+    <color name="background_color_fourth">#623494</color>
+    <color name="background_color_fifth">#A771E9</color>
+    <color name="background_color_sixth">#A52175</color>
+    <color name="leave_approve_text_color">#29CD95</color>
+    <color name="leave_pending_text_color">#CD9129</color>
+    <color name="leave_rejected_text_color">#F26D7D</color>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home_menu" />
+        <item
+            android:id="@+id/navAttendence"
+            android:icon="@drawable/nav_attendance"
+            android:title="@string/my_attendance" />
+        <item
+            android:id="@+id/navLeaveBalance"
+            android:icon="@drawable/leave_balance"
+            android:title="@string/leave_balance" />
+        <item
+            android:id="@+id/navProfile"
+            android:icon="@drawable/profile"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/navClaim"
+            android:icon="@drawable/claim"
+            android:title="@string/claim"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/navPaySlip"
+            android:icon="@drawable/pay_slip"
+            android:title="@string/pay_slip"
+            android:visible="false"/>
+        <item
+            android:id="@+id/navQrCode"
+            android:icon="@drawable/qr"
+            android:title="@string/my_qr_code" />
+
+        <item
+            android:id="@+id/navLogout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout"
+            />
+    </group>
+</menu>
