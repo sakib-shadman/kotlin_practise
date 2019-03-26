@@ -11,6 +11,10 @@ import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import app.jontromanob.com.pihr_kotlin.R
+import app.jontromanob.com.pihr_kotlin.retrofit.SubDomainApiClient
+import app.jontromanob.com.pihr_kotlin.retrofit.subdomain.call.SubDomainCheck
+import app.jontromanob.com.pihr_kotlin.retrofit.subdomain.model.CompanyInformation
+import app.jontromanob.com.pihr_kotlin.util.CompanyInformationUtil
 import app.jontromanob.com.pihr_kotlin.util.CustomSnackbar
 import app.jontromanob.com.pihr_kotlin.util.CustomSnackbar.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -40,6 +44,8 @@ class MainActivity : AppCompatActivity() {
 
 
                 getInput()
+                callSubdomainApi()
+
             }
         })
     }
@@ -71,6 +77,36 @@ class MainActivity : AppCompatActivity() {
         return connected
     }
 
+
+    private fun callSubdomainApi(){
+        SubDomainCheck.getCompanyInformation(subDomainName.text.toString(),object : SubDomainCheck.SubDomainCallback{
+            override fun onSuccess(companyInformation: CompanyInformation?) {
+
+                CompanyInformationUtil.saveCompanyInfo(this@MainActivity,companyInformation!!)
+
+            }
+
+            override fun onFailure() {
+
+                SubDomainApiClient.retrofit = null
+                CustomSnackbar.showMessage(this@MainActivity, getView(), "No Company found under this Sub Domain")
+
+            }
+
+            override fun onServerFailure() {
+
+                SubDomainApiClient.retrofit = null
+                CustomSnackbar.showMessage(this@MainActivity, getView(), "Server is currently down! Please try again later.")
+            }
+
+            override fun onNotFound() {
+
+                SubDomainApiClient.retrofit = null
+                CustomSnackbar.showMessage(this@MainActivity, getView(), "Server Error! Please try again later.");
+            }
+
+        })
+    }
 
 
 }
