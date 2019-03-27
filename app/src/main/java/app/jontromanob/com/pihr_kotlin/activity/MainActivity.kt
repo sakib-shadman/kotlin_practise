@@ -1,6 +1,7 @@
 package app.jontromanob.com.pihr_kotlin.activity
 
 import android.content.Context
+import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.net.NetworkInfo
@@ -83,6 +84,7 @@ class MainActivity : AppCompatActivity() {
             override fun onSuccess(companyInformation: CompanyInformation?) {
 
                 CompanyInformationUtil.saveCompanyInfo(this@MainActivity,companyInformation!!)
+                launchLoginActivity()
 
             }
 
@@ -107,6 +109,16 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
+
+    fun launchLoginActivity(){
+
+        val intent = Intent(this,LoginActivity::class.java)
+        startActivity(intent)
+
+    }
+
+
+
 
 
 }
