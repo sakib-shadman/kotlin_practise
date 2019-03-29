@@ -4,9 +4,13 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.ViewGroup
 import app.jontromanob.com.pihr_kotlin.R
 import app.jontromanob.com.pihr_kotlin.retrofit.SubDomainApiClient
+import app.jontromanob.com.pihr_kotlin.retrofit.login.Call.CallLogin
+import app.jontromanob.com.pihr_kotlin.retrofit.login.Model.LogInResponse
 import app.jontromanob.com.pihr_kotlin.util.CompanyInformationUtil
+import app.jontromanob.com.pihr_kotlin.util.CustomSnackbar
 import app.jontromanob.com.pihr_kotlin.util.SaveUserInformationUtil
 import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
@@ -23,10 +27,11 @@ class LoginActivity : AppCompatActivity() {
         showCompanyInfo()
         onClickSettings()
         onClickChangeSubdomain()
+        onClickLogin()
 
     }
 
-    fun showCompanyInfo(){
+    private fun showCompanyInfo(){
 
         val companyInformation = CompanyInformationUtil.getCompanyInfo(applicationContext)
         if(companyInformation?.imagePath != null) {
@@ -38,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    fun onClickSettings(){
+    private fun onClickSettings(){
 
         settings.setOnClickListener {
             if(changeSubDomain.visibility == View.VISIBLE){
@@ -50,7 +55,7 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    fun onClickChangeSubdomain(){
+    private fun onClickChangeSubdomain(){
 
         changeSubDomain.setOnClickListener {
 
@@ -63,9 +68,83 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    private fun onClickLogin(){
 
 
+        login_btn.setOnClickListener {
+
+            if(inputValidated()){
+
+                loginProcess(login_username.text.toString(),login_password.text.toString(),
+                        getString(R.string.login_processing), false)
+            }
+        }
+
+    }
+
+    private fun inputValidated() : Boolean {
+
+        if(login_username.text.trim().isEmpty()){
+            CustomSnackbar.showMessage(this, getView(), getString(R.string.provide_username))
+            return false
+        }
+
+        if (login_password.text.trim().isEmpty()) {
+            CustomSnackbar.showMessage(this, getView(), getString(R.string.provide_password))
+            return false
+        }
+
+     /*   if ((!checkInternetConnection())!!) {
+            CustomSnackbar.showMessage(this, getView(), getString(R.string.check_internet_connection))
+            return false
+        }*/
 
 
+        return true
+    }
+
+    private fun getView(): View {
+        return (this@LoginActivity
+                .findViewById<View>(android.R.id.content) as ViewGroup).getChildAt(0)
+    }
+
+    private fun loginProcess(userName : String,password : String, dialogTitle : String, isForRefresh : Boolean){
+
+        val companyInformationUtil = CompanyInformationUtil.getCompanyInfo(this@LoginActivity)
+        val companyId = companyInformationUtil?.companyId
+
+        if(companyId != null){
+
+            CallLogin.call(userName,password,"password",
+                    companyId,object : CallLogin.LogInCallBack{
+                override fun onLogInSuccess(logInResponse: LogInResponse?) {
+
+                    SaveUserInformationUtil.saveUserInfo(applicationContext, logInResponse!!)
+                    CustomSnackbar.showMessage(this@LoginActivity,getView(),"Login Successful")
+                    gotoDashBoard()
+                }
+
+                override fun onLogInFailure() {
+
+                    CustomSnackbar.showMessage(this@LoginActivity, getView(), "Failed to authenticate! Please login again.")
+                    SaveUserInformationUtil.clearUserInfo(this@LoginActivity)
+
+                }
+
+                override fun onServerFailure() {
+
+                    CustomSnackbar.showMessage(this@LoginActivity, getView(),  getString(R.string.invalid_username_password))
+                }
+
+
+            })
+        }
+
+    }
+
+    private fun gotoDashBoard(){
+        val intent  = Intent(this,HomeActivity::class.java)
+        startActivity(intent)
+    }
 
 }

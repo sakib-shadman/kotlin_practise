@@ -30,7 +30,7 @@ class SubDomainCheck {
                        callback.onServerFailure()
                    }
                     else if(response.body() != null && HttpURLConnection.HTTP_OK == response.code()){
-                      if (response.body()!!.companyId != null){
+                      if (response.body()?.companyId != null){
 
                           callback.onSuccess(response.body())
 

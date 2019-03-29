@@ -71,11 +71,12 @@ class ApiClient {
         }
 
         fun getCompleteUrl(): String? {
-            return if (CompanyInformationUtil. != null) {
-                //return BASE_URL_PREFIX + CompanyInformationUtil.getSubDomainName() + BASE_URL_Extension;
+            return if (CompanyInformationUtil != null) {
 
-                BASE_URL_LOCAL
-            } else null
+                BASE_URL_PREFIX + "viva" + BASE_URL_Extension;
+
+            }
+            else ""
         }
     }
 }

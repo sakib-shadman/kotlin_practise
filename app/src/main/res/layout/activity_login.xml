@@ -84,7 +84,7 @@
         android:background="@drawable/form_bg"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:visibility="invisible">
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
